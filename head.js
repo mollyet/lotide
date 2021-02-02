@@ -12,12 +12,12 @@ const assertEqual = function(actual, expected) {
 
 // f(x) to find the head of an array
 const head = function(arr) {
-return arr[0];
+  return arr[0];
 };
 
 
 // test code
-assertEqual(head([5,6,7]), 5);
+assertEqual(head([5, 6, 7]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 assertEqual(head([1]), 1); //pass
 assertEqual(head([]), undefined); //pass
