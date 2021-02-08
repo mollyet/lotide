@@ -10,9 +10,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// test code
-assertEqual("LHL", "LHL"); //pass
-assertEqual("Lotide", "hello darkness"); //fail
-assertEqual(1, 1); //pass
-assertEqual(1, 2); //fail
-assertEqual(42, "cheese"); //fail
+// export! 
+
+module.exports = assertEqual;
