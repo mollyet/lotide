@@ -5,7 +5,7 @@
 const middle = function(arr) {
   let arrMid = [];
   if (arr.length < 2) {
-    return arrMid;
+    return undefined;
   }
   if (arr.length % 2 === 0) {
     arrMid.push(arr[Math.floor((arr.length - 1) / 2)]);

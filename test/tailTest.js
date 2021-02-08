@@ -1,13 +1,17 @@
-const assertEqual = require("../assertEqual");
+const assert = require("chai").assert;
 const tail = require("../tail");
 
+describe("#tail", () => {
+  const words = ["hello", "world", "array"];
+  it("should return everything but the head of the array", () => {
+    assert.deepEqual(tail(words), ["world", "array"]);
+  });
+  it("should not modify the length of the exisiting array", () => {
+    assert.strictEqual(words.length, 3);
+  });
+  it("the length of the tail should be one less than the original array", () => {
+    let lengthCheck = tail(words);
+    assert.strictEqual(lengthCheck.length, 2);
 
-// test code
-const words = ["hello", "world", "array"];
-let tailOne = tail(words);
-console.log("here is an array", words);
-console.log("here is the tail", tailOne);
-console.log("the length of the orginal array is not modifed");
-assertEqual(words.length, 3);
-console.log("the length of the tail is one less than the lengh of the orginal array");
-assertEqual(tailOne.length, 2);
+  });
+});
