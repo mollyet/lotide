@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@mollyet/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "Mini Lodash clone made during Lighhouse Labs Web Developer bootcamp",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/mollyet/lotide.git"
   },
-  "author": "",
+  "author": {
+    "name": "Molly Trepanier",
+    "email": "mtrepanier123@gmail.com",
+    "github": "@mollyet"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mollyet/lotide/issues"
