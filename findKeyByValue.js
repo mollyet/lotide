@@ -1,15 +1,5 @@
-// assertation function
-const assertEqual = function(actual, expected) {
-  const pass = "🥰 🎉 Assertation Passed: ";
-  const fail = "😭 😱 Assertation Failed: ";
-  if (actual === expected) {
-    console.log(`${pass} ${actual} === ${expected}`);
-  } else {
-    console.log(`${fail} ${actual} !== ${expected}`);
-  }
-};
+// when given an object and a value, returns corresp. key for that value
 
-///
 
 const findKeyByValue = function(obj, value) {
   for (let key of Object.keys(obj)) {
@@ -19,13 +9,11 @@ const findKeyByValue = function(obj, value) {
   }
 };
 
-// test code
 
-const bestTVShowsByGenre = {
-  scienceFiction: "Star Trek: Discovery",
-  comedy: "The Good Place",
-  mystery: "Dark"
-};
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "Dark"), "mystery");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "House Hunters"), undefined);
+// 
+
+
+
+module.exports = findKeyByValue;
+
