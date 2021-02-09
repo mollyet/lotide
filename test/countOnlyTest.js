@@ -11,5 +11,5 @@ describe("#countOnly", () => {
   });
   it("should not modify orignal array", () => {
     assert.deepEqual(firstNames, ["Karl", "Salima", "Agouhanna", "Fang", "Kavith", "Jason", "Salima", "Fang", "Joe"]);
-  })
+  });
 });

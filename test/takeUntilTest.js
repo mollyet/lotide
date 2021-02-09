@@ -11,6 +11,6 @@ describe("#takeUnitl", () => {
   });
   it("should not modify array", () => {
     assert.deepEqual(array, ["take", "this", "array", "so", "your", "function", "functions"]);
-  })
+  });
 });
 
