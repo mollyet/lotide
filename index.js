@@ -6,6 +6,7 @@ const countOnly = require("./countOnly")
 const findKey = require("./findkey")
 const findKeyByValue = require("./findKeyByValue")
 const letterPositions = require("./letterPositions")
+const map = require("./map")
 
 module.exports = {
   head: head,
@@ -16,4 +17,6 @@ module.exports = {
   findKey: findKey,
   findKeyByValue: findKeyByValue,
   letterPositions: letterPositions,
+  map: map,
+  
 };
