@@ -8,7 +8,10 @@ const map = require("../map");
 describe("#map", () => {
   const words = ["lizards", "inhabit", "great", "heights", "through", "high", "outcroppings", "under", "serious", "epiphytes"];
   it("should take an array and callback and return a transfromed array", () => {
-    assert.deepEqual(map(words, x => x[0]),["l", "i", "g", "h", "t", "h", "o", "u", "s", "e"] )
+    assert.deepEqual(map(words, x => x[0]), ["l", "i", "g", "h", "t", "h", "o", "u", "s", "e"]);
+  });
+  it("should not modify orginal array", () => {
+    assert.deepEqual(words, ["lizards", "inhabit", "great", "heights", "through", "high", "outcroppings", "under", "serious", "epiphytes"]);
   });
 
 });

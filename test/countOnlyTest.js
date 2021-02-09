@@ -9,4 +9,7 @@ describe("#countOnly", () => {
   it("it counts the occurances of a string within an array", () => {
     assert.equal(result["Fang"], 2);
   });
+  it("should not modify orignal array", () => {
+    assert.deepEqual(firstNames, ["Karl", "Salima", "Agouhanna", "Fang", "Kavith", "Jason", "Salima", "Fang", "Joe"]);
+  })
 });
