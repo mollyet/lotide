@@ -10,6 +10,7 @@ const map = require("./map")
 const takeUntil = require("./takeUntil")
 const without = require("./without");
 const eqArrays = require("./eqArrays");
+const assertEqual = require("./assertEqual");
 
 module.exports = {
   head: head,
@@ -24,4 +25,5 @@ module.exports = {
   takeUntil: takeUntil,
   without: without,
   eqArrays: eqArrays,
+  assertEqual: assertEqual,
 };

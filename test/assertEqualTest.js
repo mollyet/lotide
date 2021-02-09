@@ -1,8 +1,11 @@
+const assert = require("chai").assert;
 const assertEqual = require("../assertEqual");
 
-
-
-assertEqual("LHL", "LHL"); //pass 
-assertEqual(1, 1); //pass0
-assertEqual(1, 2); //fail
-assertEqual(42, "cheese"); //fail
+describe("#assertEqual", () => {
+  it("should take two arguments and display a message if they are equal", () => {
+    assert.strictEqual(assertEqual("LHL", "LHL"), true);
+  });
+  it("should display a message if the test fails", () => {
+    assert.strictEqual(assertEqual(42, "cheese"), false);
+  });
+});
