@@ -9,6 +9,7 @@ const letterPositions = require("./letterPositions")
 const map = require("./map")
 const takeUntil = require("./takeUntil")
 const without = require("./without");
+const eqArrays = require("./eqArrays");
 
 module.exports = {
   head: head,
@@ -22,4 +23,5 @@ module.exports = {
   map: map,
   takeUntil: takeUntil,
   without: without,
+  eqArrays: eqArrays,
 };
