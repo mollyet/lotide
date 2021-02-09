@@ -1,6 +1,15 @@
-const eqArrays = require("../eqArrays");
-const assertArraysEqual = require("../assertArraysEqual")
-// test code
+const assert = require("chai").assert;
+const assertArraysEqual = require("../assertArraysEqual");
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]); //pass
-assertArraysEqual([1, 2], [3, 5]); //fail
+
+//
+
+describe("#assertArraysEqual", () => {
+  it("should take in two arrays and display a message if they match", () => {
+    assert.deepEqual(assertArraysEqual([1, 2, 3], [1, 2, 3]), true);
+  });
+  it("should display a message if the arrays do not match", () => {
+    assert.deepEqual(assertArraysEqual([1, 2], [3, 5]), false);
+  });
+});
+
