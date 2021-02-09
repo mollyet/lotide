@@ -1,6 +1,6 @@
 {
   "name": "@mollyet/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mini Lodash clone made during Lighhouse Labs Web Developer bootcamp",
   "main": "index.js",
   "directories": {
