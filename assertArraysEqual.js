@@ -1,4 +1,4 @@
-const eqArrays = require("./eqArrays");
+const _ = require("../index");
 
 // 
 
@@ -6,7 +6,7 @@ const eqArrays = require("./eqArrays");
 const assertArraysEqual = function(arrayUno, arrayDeux) {
   const pass = "🥰 🎉 Assertation Passed: ";
   const fail = "😭 😱 Assertation Failed: ";
-  if (eqArrays(arrayUno, arrayDeux)) {
+  if (_.eqArrays(arrayUno, arrayDeux)) {
     console.log(`${pass} ${arrayUno} === ${arrayDeux}`);
     return true;
   } else {

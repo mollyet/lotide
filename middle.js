@@ -1,4 +1,3 @@
-
 // find the middle value in an array
 
 

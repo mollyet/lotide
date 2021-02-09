@@ -1,5 +1,5 @@
 const assert = require("chai").assert;
-const eqObjects = require("../eqObjects");
+const _ = require("../index");
 
 
 //
@@ -10,12 +10,12 @@ describe("#eqObjects", () => {
   const abc = { a: "1", b: "2", c: "3" };
   const cd = { c: "1", d: ["2", 3] };
   it("should take in two objects and return true if they are equal", () => {
-    assert.strictEqual(eqObjects(ab, ba), true);
+    assert.strictEqual(_.eqObjects(ab, ba), true);
   });
   it("should return false when one object has more keys than the other", () => {
-    assert.deepEqual(eqObjects(ab, abc), false);
+    assert.deepEqual(_.eqObjects(ab, abc), false);
   });
   it("should return false when object values are different types", () => {
-    assert.deepEqual(eqObjects(cd, ab), false);
+    assert.deepEqual(_.eqObjects(cd, ab), false);
   });
 });

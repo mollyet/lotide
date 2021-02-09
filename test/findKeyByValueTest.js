@@ -1,6 +1,5 @@
 const assert = require("chai").assert;
-const findKeyByValue = require("../findKeyByValue");
-
+const _ = require("../index");
 
 describe("#findKeyByValue", () => {
   const bestTVShowsByGenre = {
@@ -9,10 +8,10 @@ describe("#findKeyByValue", () => {
     mystery: "Dark"
   };
   it("when given a value, it should return the correspondng key", () => {
-    assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "Dark"), "mystery");
+    assert.strictEqual(_.findKeyByValue(bestTVShowsByGenre, "Dark"), "mystery");
   });
   it("should retrun undefined when given a value that does not have a corresponding key", () => {
-    assert.strictEqual(findKeyByValue(bestTVShowsByGenre, "House Hunters"), undefined);
+    assert.strictEqual(_.findKeyByValue(bestTVShowsByGenre, "House Hunters"), undefined);
   });
 });
 

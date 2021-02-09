@@ -1,5 +1,5 @@
 const assert = require("chai").assert;
-const assertObjectsEqual = require("../assertObjectsEqual");
+const _ = require("../index");
 
 describe("#assertObjectsEqual", () => {
   const ab = { a: "1", b: "2" };
@@ -7,9 +7,9 @@ describe("#assertObjectsEqual", () => {
   const abc = { a: 1, b: 2, c: 3 };
 
   it("should take in two objects and display a message if they match", () => {
-    assert.deepEqual(assertObjectsEqual(ab, ba), true);
+    assert.deepEqual(_.assertObjectsEqual(ab, ba), true);
   });
   it("should display a message if the objects do not match", () => {
-    assert.deepEqual(assertObjectsEqual(ab, abc), false);
+    assert.deepEqual(_.assertObjectsEqual(ab, abc), false);
   });
 });

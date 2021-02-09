@@ -1,5 +1,4 @@
-
-/// compare these arrays
+// compares two arrays
 
 const eqArrays = function(arrOne, arrTwo) {
   if (arrOne.length !== arrTwo.length) {
@@ -11,8 +10,7 @@ const eqArrays = function(arrOne, arrTwo) {
     }
   } return true;
 };
-
-// when testing, use with assertEqual 
+ 
 
 //
 

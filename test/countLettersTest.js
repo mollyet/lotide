@@ -1,5 +1,5 @@
 const assert = require("chai").assert;
-const countLetters = require("../countLetters");
+const _ = require("../index");
 
 
 //
@@ -19,7 +19,7 @@ describe("#countLetters", () => {
     n: 1,
   };
   it("should return a count of letters in a string as an object", () => {
-    assert.deepEqual(countLetters(words), result);
+    assert.deepEqual(_.countLetters(words), result);
   });
   it("should not count spaces", () => {
     assert.strictEqual(result[" "], undefined);
