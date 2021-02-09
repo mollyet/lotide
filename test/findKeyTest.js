@@ -14,10 +14,10 @@ describe("#findKey", () => {
   };
   it("should take in a callback function && use the output to return a key", () => {
     ;
-    assert.equal(findKey(result, x => x.stars === 2), "noma");
+    assert.strictEqual(findKey(result, x => x.stars === 2), "noma");
   });
   it("should return undefined if a key is not found", () => {
-    assert.equal(findKey(result, x => x.stars === 7), undefined);
+    assert.strictEqual(findKey(result, x => x.stars === 7), undefined);
   });
 });;
 
